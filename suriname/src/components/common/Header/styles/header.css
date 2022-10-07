@@ -10,4 +10,9 @@
   align-items: center;
   padding: 0 24px;
   color: rgb(51, 51, 51);
+}
+.header-root .header img {
+  height: 45px;
+  width: 45px;
+  margin-right: 12px;
 }/*# sourceMappingURL=header.css.map */

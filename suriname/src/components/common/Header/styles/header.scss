@@ -11,5 +11,10 @@
     align-items: center;
     padding: 0 24px;
     color: $black-100;
+    img {
+      height: 45px;
+      width: 45px;
+      margin-right: 12px;
+    }
   }
 }
