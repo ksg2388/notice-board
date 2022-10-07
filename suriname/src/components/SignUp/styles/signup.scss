@@ -57,10 +57,11 @@
         background-color: $main;
         font-size: 16px;
         font-weight: 600;
-        margin-top: 24px;
+        margin: 24px 0;
         &:disabled {
           background-color: lightgray;
           color: linen;
+          cursor: default;
         }
       }
     }

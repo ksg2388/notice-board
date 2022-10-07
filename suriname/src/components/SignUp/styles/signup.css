@@ -58,9 +58,10 @@
   background-color: #ccccff;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 24px;
+  margin: 24px 0;
 }
 .signup-root .signup-input-section .signup-form .signup-btn:disabled {
   background-color: lightgray;
   color: linen;
+  cursor: default;
 }/*# sourceMappingURL=signup.css.map */
