@@ -1,0 +1,13 @@
+.header-root {
+  width: 100%;
+}
+.header-root .header {
+  display: flex;
+  height: 64px;
+  background-color: #ccccff;
+  font-size: 32px;
+  font-weight: 700;
+  align-items: center;
+  padding: 0 24px;
+  color: rgb(51, 51, 51);
+}/*# sourceMappingURL=header.css.map */

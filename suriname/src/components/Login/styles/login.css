@@ -1,0 +1,50 @@
+.login-root {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding: 160px 16px;
+}
+.login-root .login-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #2d8739;
+  margin-bottom: 60px;
+}
+.login-root .login-content {
+  display: flex;
+  flex-direction: column;
+}
+.login-root .login-content .login-form {
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.login-root .login-content .login-form .id-input {
+  width: 360px;
+  height: 48px;
+  color: #2d8739;
+}
+.login-root .login-content .login-form .password-input {
+  width: 360px;
+  height: 48px;
+  color: #2d8739;
+}
+.login-root .login-content .login-form .login-btn {
+  width: 360px;
+  height: 48px;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #c8c8c8;
+}
+.login-root .login-content .sing-up-msg-tag {
+  font-size: 14px;
+  align-self: flex-end;
+  font-weight: 500;
+  color: #4ac258;
+}/*# sourceMappingURL=login.css.map */
