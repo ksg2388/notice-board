@@ -1,8 +1,8 @@
 import React from "react";
-import LoginContainer from "../../components/Login/containers/LoginContainer";
+import LoginNavigation from "../components/LoginNavigation";
 
 const LoginNavigationContainer = () => {
-  return <LoginContainer />;
+  return <LoginNavigation />;
 };
 
 export default LoginNavigationContainer;

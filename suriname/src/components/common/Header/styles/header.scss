@@ -1,0 +1,15 @@
+@import "../../../../styles/color.scss";
+
+.header-root {
+  width: 100%;
+  .header {
+    display: flex;
+    height: 64px;
+    background-color: $main;
+    font-size: 32px;
+    font-weight: 700;
+    align-items: center;
+    padding: 0 24px;
+    color: $black-100;
+  }
+}
