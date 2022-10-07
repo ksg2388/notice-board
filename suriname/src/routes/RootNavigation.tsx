@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import LoginNavigationContainer from './containers/LoginNavigationContainer';
 import MainNavigationContainer from './containers/MainNavigationContainer';
+import '@styles/core.css';
 
 type Props = {
   root: 'main' | 'login';
