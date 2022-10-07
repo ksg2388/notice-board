@@ -1,3 +1,3 @@
 export const images = {
-  logo: '../../public/asset/icon/logo.png',
+  logo: '/asset/icon/logo.png',
 };
