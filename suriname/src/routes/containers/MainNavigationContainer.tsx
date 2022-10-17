@@ -1,5 +1,5 @@
-import React from "react";
-import MainNavigation from "../components/MainNavigation";
+import React from 'react';
+import MainNavigation from '@routes/components/MainNavigation';
 
 const MainNavigationContainer = () => {
   return <MainNavigation />;
