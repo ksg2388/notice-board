@@ -4,13 +4,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #eaeaea;
+  background: linear-gradient(#0d1364, #a7cbc9);
   padding: 160px 16px;
 }
 .login-root .login-title {
   font-size: 60px;
   font-weight: bold;
-  color: #2d8739;
+  color: #ccccff;
   margin-bottom: 60px;
 }
 .login-root .login-content {
@@ -27,12 +27,14 @@
 .login-root .login-content .login-form .id-input {
   width: 360px;
   height: 48px;
-  color: #2d8739;
+  color: #0d1364;
+  font-weight: 600;
 }
 .login-root .login-content .login-form .password-input {
   width: 360px;
   height: 48px;
-  color: #2d8739;
+  color: #0d1364;
+  font-weight: 600;
 }
 .login-root .login-content .login-form .login-btn {
   width: 360px;
@@ -40,11 +42,12 @@
   font-size: 16px;
   color: #ffffff;
   border-radius: 4px;
-  background-color: #c8c8c8;
+  font-weight: 600;
+  background-color: #0d1364;
 }
 .login-root .login-content .sing-up-msg-tag {
   font-size: 14px;
   align-self: flex-end;
-  font-weight: 500;
-  color: #4ac258;
+  font-weight: 600;
+  color: #0d1364;
 }/*# sourceMappingURL=login.css.map */

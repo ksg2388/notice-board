@@ -21,7 +21,7 @@ button {
 
 a {
   -webkit-text-decoration: 0;
-          text-decoration: 0;
+  text-decoration: 0;
 }
 
 input {
@@ -63,4 +63,4 @@ select:focus {
 }
 .primary-btn.active {
   background-color: #0a83f3;
-}/*# sourceMappingURL=core.css.map */
+} /*# sourceMappingURL=core.css.map */
