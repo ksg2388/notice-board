@@ -1,3 +1,4 @@
+import { apiRoute, requestPost } from "@libs/api";
 import React, { useCallback, useEffect, useState } from "react";
 import SingUp from "../SignUp";
 
@@ -60,20 +61,31 @@ const SignUpContainer = () => {
       setIsName(true);
     }
   }, []);
+  const SignUpHandle = useCallback(async () => {
+    const {
+      config: { status },
+    } = await requestPost(apiRoute.user, {
+      id: id,
+      password: password,
+      username: name,
+    });
 
-  // const onClickedSignUpBtn = useCallback(
-  //   (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-  //     e.preventDefault();
-  //     if (!id) {
-  //       return alert("아이디를 입력해주세요.");
-  //     } else if (!password) {
-  //       return alert("비밀번호를 입력하세요.")
-  //     } else if (!passwordCheck) {
-  //       return aler
-  //     }
-  //   },
-  //   [id, password, passwordCheck, name],
-  // )
+    if (status === 201) {
+      alert("회원가입이 완료되었습니다!");
+    } else {
+      console.log("회원가입에 실패했습니다...");
+    }
+
+    return;
+  }, [id, password, name]);
+
+  const onClickedSignUpBtn = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+      e.preventDefault();
+      SignUpHandle();
+    },
+    []
+  );
 
   useEffect(() => {
     if (password === passwordConfirm) {
@@ -103,6 +115,7 @@ const SignUpContainer = () => {
       handlePassword={handlePassword}
       handlePasswordConfirm={handlePasswordConfirm}
       handleName={handleName}
+      onClickedSignUpBtn={onClickedSignUpBtn}
     />
   );
 };
