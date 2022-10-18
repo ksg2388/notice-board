@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Post } from "@typedef/apiType";
 
-const API_ORIGIN = "http://localhost:3500";
+const API_ORIGIN = "http://localhost:8000";
 
 //글로벌 axios 기본 설정
 axios.defaults.baseURL = API_ORIGIN;
@@ -51,3 +51,7 @@ export async function requestDelete<T>(url: string, body?: object) {
     return { config: { status: 400 } };
   }
 }
+
+export const apiRoute = {
+  user: "/users",
+};
