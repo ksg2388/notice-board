@@ -1,15 +1,15 @@
-import HeaderContainers from '@components/common/Header/containers/HeaderContainers';
-import LoginContainer from '@components/Login/containers/LoginContainer';
-import SignUpContainer from '@components/SignUp/containers/SignUpContainer';
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import HeaderContainers from "@components/common/Header/containers/HeaderContainers";
+import LoginContainer from "@components/Login/containers/LoginContainer";
+import SignUpContainer from "@components/SignUp/containers/SignUpContainer";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
 const MainNavigation = () => {
   return (
     <Routes>
-      <Route path='/login' element={<LoginContainer />} />
+      <Route path="/login" element={<LoginContainer />} />
       <Route
-        path='/signup'
+        path="/signup"
         element={
           <>
             <HeaderContainers />
