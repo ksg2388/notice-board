@@ -4,7 +4,7 @@ import RootNavigation from "../RootNavigation";
 const RootNavigationContainer = () => {
   const [root, setRoot] = useState("");
 
-  return <RootNavigation root={"main"} />;
+  return <RootNavigation root={"login"} />;
 };
 
 export default RootNavigationContainer;
