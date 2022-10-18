@@ -1,0 +1,34 @@
+.signupcomplete-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+}
+.signupcomplete-root .complete-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: #ccccff;
+  border-radius: 50%;
+}
+.signupcomplete-root .complete-section .spoon {
+  width: 300px;
+  height: 300px;
+}
+.signupcomplete-root .complete-section .complete-text {
+  font-size: 32px;
+  font-weight: 600;
+}
+.signupcomplete-root .goto-login-button-section .goto-login-button {
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: #ccccff;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 500;
+}/*# sourceMappingURL=signupcomplete.css.map */
