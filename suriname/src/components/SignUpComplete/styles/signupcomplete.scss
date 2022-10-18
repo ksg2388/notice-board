@@ -1,0 +1,40 @@
+@import "../../../styles/color.scss";
+
+.signupcomplete-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+
+  .complete-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: $main;
+    border-radius: 50%;
+    .spoon {
+      width: 300px;
+      height: 300px;
+    }
+    .complete-text {
+      font-size: 32px;
+      font-weight: 600;
+    }
+  }
+
+  .goto-login-button-section {
+    .goto-login-button {
+      margin-top: 50px;
+      width: 200px;
+      height: 50px;
+      background-color: $main;
+      border-radius: 4px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
