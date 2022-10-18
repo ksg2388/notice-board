@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/login.css";
 
 type Props = {
@@ -43,7 +44,9 @@ const Login = ({
             Login
           </button>
         </form>
-        <a className="sing-up-msg-tag">Go To Sing Up!!</a>
+        <Link to="/signup" className="sing-up-msg-tag">
+          Go To Sing Up!!
+        </Link>
       </div>
     </div>
   );
