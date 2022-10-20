@@ -4,15 +4,16 @@ import { images } from "@assets/image";
 
 type Props = {
   onBtnClicked: () => void;
+  name: string;
 };
 
-const SignUpComplete = ({ onBtnClicked }: Props) => {
+const SignUpComplete = ({ onBtnClicked, name }: Props) => {
   return (
     <>
       <div className="signupcomplete-root">
         <section className="complete-section">
           <img src={images.spoon} className="spoon" alt="" />
-          <p className="complete-text">강프로, 식사 잘 잡수고~</p>
+          <p className="complete-text">{`${name[0]}프로, 식사 잘 잡수고~`}</p>
           <p className="complete-text">회원가입 축하해~</p>
         </section>
         <section className="goto-login-button-section">
