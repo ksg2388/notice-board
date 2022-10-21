@@ -1,5 +1,6 @@
 import { apiRoute, requestPost } from "@libs/api";
 import React, { useCallback, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import SingUp from "../SignUp";
 
 const SignUpContainer = () => {
@@ -20,13 +21,15 @@ const SignUpContainer = () => {
   const [isPasswordConfirm, setIsPasswordConfirm] = useState(false);
   const [isName, setIsName] = useState(false);
 
+  const navigate = useNavigate();
+
   const handleId = useCallback((v: string) => {
     setId(v);
     if (v.length < 4) {
       setIdMessage("4글자 이상 입력해주세요.");
       setIsId(false);
     } else {
-      setNameMessage("올바른 ID 형식입니다.");
+      setIdMessage("올바른 ID 형식입니다.");
       setIsId(true);
     }
   }, []);
@@ -72,19 +75,19 @@ const SignUpContainer = () => {
 
     if (status === 201) {
       alert("회원가입이 완료되었습니다!");
+      navigate("/signup/complete", { state: name });
     } else {
-      console.log("회원가입에 실패했습니다...");
+      alert("회원가입에 실패했습니다...");
+      return;
     }
-
-    return;
-  }, [id, password, name]);
+  }, [id, password, name, navigate]);
 
   const onClickedSignUpBtn = useCallback(
     (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
       e.preventDefault();
       SignUpHandle();
     },
-    []
+    [SignUpHandle]
   );
 
   useEffect(() => {
