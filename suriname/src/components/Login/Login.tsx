@@ -33,7 +33,7 @@ const Login = ({
             onChange={(e) => HandleId(e.target.value)}
           ></input>
           <input
-            type="text"
+            type="password"
             value={password}
             className="password-input"
             name="password"

@@ -1,4 +1,5 @@
 import HeaderContainers from "@components/common/Header/containers/HeaderContainers";
+import NotFound from "@components/NotFound/NotFound";
 import SignUpContainer from "@components/SignUp/containers/SignUpContainer";
 import SignUpCompleteContainer from "@components/SignUpComplete/containers/SignUpCompleteContainer";
 import React from "react";
@@ -9,10 +10,9 @@ const LoginNavigation = () => {
   return (
     <Routes>
       <Route path="/login" element={<LoginContainer />} />
-      <Route element={<HeaderContainers />}>
-        <Route path="/signup" element={<SignUpContainer />} />
-      </Route>
+      <Route path="/signup" element={<SignUpContainer />} />
       <Route path="/signup/complete" element={<SignUpCompleteContainer />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
